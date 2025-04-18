@@ -1,0 +1,812 @@
+{
+	"name": "SaveMyEyes-SaveMyBrain",
+	"colors": {
+		"editor.background": "#000000",
+    "editorGroup.border": "#00DDFF", // Color celeste vibrante para el separador
+    "editorGroup.dropBackground": "#00DDFF33", // Color semi-transparente al arrastrar editores
+    "scrollbarSlider.activeBackground": "#fffb00",
+    "scrollbarSlider.background": "#fffb00a2",
+    "scrollbarSlider.hoverBackground": "#fffb00b5",
+    "sideBar.border": "#0080ff",
+    "activityBar.background": "#2d1467",
+    "titleBar.activeBackground": "#5c43ff",
+    "titleBar.activeForeground": "#ffffff",
+    "tab.activeBackground": "#3344a8",
+    "tab.inactiveBackground": "#3333",
+    "tab.border": "#3300ff40",
+    "editorIndentGuide.background1": "#a9ffa580",
+    "editorIndentGuide.background2": "#a9ffa570",
+    "editorIndentGuide.background3": "#a9ffa560",
+    "editorIndentGuide.background4": "#a9ffa558",
+    "editorIndentGuide.background5": "#a9ffa550",
+    "editorIndentGuide.activeBackground1": "#3dff33",
+    "editorIndentGuide.activeBackground2": "#3dff33cc",
+    "editorIndentGuide.activeBackground3": "#3dff33bb",
+    "editorIndentGuide.activeBackground4": "#3dff33aa",
+    "editorIndentGuide.activeBackground5": "#3dff3399",
+
+    "terminal.background": "#000000", // Color de fondo de la terminal (negro profundo)
+    "terminal.foreground": "#b5ffd9", // Color del texto normal de la terminal (verde neón)
+    "terminal.selectionBackground": "#0066ff77", // Color de fondo al seleccionar texto (azul robotizado)
+    "terminal.border": "#0080ff55", // Color del borde de la terminal (azul eléctrico translúcido)
+    "terminal.ansiBlack": "#001233", // Color ANSI negro (azul oscuro para aspecto robótico)
+    "terminal.ansiBlue": "#0077ff", // Color ANSI azul (azul digital brillante)
+    "terminal.ansiCyan": "#00ddff", // Color ANSI cian (cian futurista)
+    "terminal.ansiGreen": "#33ff66", // Color ANSI verde (verde digital)
+    "terminal.ansiMagenta": "#ff00aa", // Color ANSI magenta (rosa neón cyberpunk)
+    "terminal.ansiRed": "#ff3366", // Color ANSI rojo (rojo neón)
+    "terminal.ansiWhite": "#c0c0ff", // Color ANSI blanco (blanco azulado)
+    "terminal.ansiYellow": "#ffcc00", // Color ANSI amarillo (amarillo digital)
+    "terminal.ansiBrightBlack": "#de70ff", // color de los flags
+    "terminal.ansiBrightBlue": "#33aaff", // Color ANSI azul brillante (azul cibernético)
+    "terminal.ansiBrightCyan": "#66ffff", // Color ANSI cian brillante (cian de interfaz)
+    "terminal.ansiBrightGreen": "#77ff00", // Color ANSI verde brillante (verde matriz)
+    "terminal.ansiBrightMagenta": "#ff77ff", // Color ANSI magenta brillante (magenta electrónico)
+    "terminal.ansiBrightRed": "#ff0055", // Color ANSI rojo brillante (rojo láser)
+    "terminal.ansiBrightWhite": "#fffcaa", // color titulo de columnas y titulo de footer de columnas
+    "terminal.ansiBrightYellow": "#fffb00", // Color ANSI amarillo brillante (amarillo neón)
+    "terminalCursor.foreground": "#ffd5f1", // Color del cursor de la terminal (amarillo neón)
+    "minimap.findMatchHighlight": "#fff200dd",
+    "minimap.selectionOccurrenceHighlight": "#fff200dd",
+    "minimap.selectionHighlight": "#fff200dd",
+    "editor.selectionBackground": "#00fffb42",
+    "editor.wordHighlightBackground": "#00fffb14"
+	},
+	"tokenColors": [
+		{
+			"scope": "emphasis",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "strong",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "meta.diff.header",
+			"settings": {
+				"foreground": "#000080"
+			}
+		},
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#7ca668"
+			}
+		},
+		{
+			"scope": "constant.language",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": [
+				"constant.numeric",
+				"constant.other.color.rgb-value",
+				"constant.other.rgb-value",
+				"support.constant.color"
+			],
+			"settings": {
+				"foreground": "#b5cea8"
+			}
+		},
+		{
+			"scope": "constant.regexp",
+			"settings": {
+				"foreground": "#b46695"
+			}
+		},
+		{
+			"scope": "entity.name.tag",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "entity.name.tag.css",
+			"settings": {
+				"foreground": "#d7ba7d"
+			}
+		},
+		{
+			"scope": "entity.other.attribute-name",
+			"settings": {
+				"foreground": "#9cdcfe"
+			}
+		},
+		{
+			"scope": [
+				"source.css entity.other.attribute-name",
+				"source.css.less entity.other.attribute-name.id",
+				"source.scss entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#d7ba7d"
+			}
+		},
+		{
+			"scope": "invalid",
+			"settings": {
+				"foreground": "#f44747"
+			}
+		},
+		{
+			"scope": "markup.underline",
+			"settings": {
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": "markup.bold",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "markup.heading",
+			"settings": {
+				"foreground": "#6796e6"
+			}
+		},
+		{
+			"scope": "markup.italic",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "markup.inserted",
+			"settings": {
+				"foreground": "#b5cea8"
+			}
+		},
+		{
+			"scope": "markup.deleted",
+			"settings": {
+				"foreground": "#ce9178"
+			}
+		},
+		{
+			"scope": "markup.changed",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "meta.selector",
+			"settings": {
+				"foreground": "#d7ba7d"
+			}
+		},
+		{
+			"name": "brackets of XML/HTML tags",
+			"scope": [
+				"punctuation.definition.tag"
+			],
+			"settings": {
+				"foreground": "#808080"
+			}
+		},
+		{
+			"scope": "meta.preprocessor",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "meta.preprocessor.string",
+			"settings": {
+				"foreground": "#ce9178"
+			}
+		},
+		{
+			"scope": "meta.preprocessor.numeric",
+			"settings": {
+				"foreground": "#b5cea8"
+			}
+		},
+		{
+			"scope": "meta.structure.dictionary.key.python",
+			"settings": {
+				"foreground": "#9cdcfe"
+			}
+		},
+		{
+			"scope": "storage",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "storage.type",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#ce9178"
+			}
+		},
+		{
+			"scope": "string.tag",
+			"settings": {
+				"foreground": "#ce9178"
+			}
+		},
+		{
+			"scope": "string.value",
+			"settings": {
+				"foreground": "#ce9178"
+			}
+		},
+		{
+			"scope": "string.regexp",
+			"settings": {
+				"foreground": "#d16969"
+			}
+		},
+		{
+			"name": "JavaScript string interpolation ${}",
+			"scope": [
+				"punctuation.definition.template-expression.begin.js",
+				"punctuation.definition.template-expression.begin.ts",
+				"punctuation.definition.template-expression.end.ts",
+				"punctuation.definition.template-expression.end.js"
+			],
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": [
+				"support.type.vendored.property-name",
+				"support.type.property-name",
+				"variable.css",
+				"variable.scss",
+				"variable.other.less"
+			],
+			"settings": {
+				"foreground": "#d4d4d4"
+			}
+		},
+		{
+			"scope": "keyword",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "keyword.control",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#d4d4d4"
+			}
+		},
+		{
+			"scope": [
+				"keyword.operator.new",
+				"keyword.operator.expression",
+				"keyword.operator.cast",
+				"keyword.operator.sizeof",
+				"keyword.operator.logical.python"
+			],
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "keyword.other.unit",
+			"settings": {
+				"foreground": "#b5cea8"
+			}
+		},
+		{
+			"scope": "support.function.git-rebase",
+			"settings": {
+				"foreground": "#d4d4d4"
+			}
+		},
+		{
+			"scope": "constant.sha.git-rebase",
+			"settings": {
+				"foreground": "#b5cea8"
+			}
+		},
+		{
+			"name": "coloring of the Java import and package identifiers",
+			"scope": [
+				"storage.modifier.import.java",
+				"variable.language.wildcard.java",
+				"storage.modifier.package.java"
+			],
+			"settings": {
+				"foreground": "#d4d4d4"
+			}
+		},
+		{
+			"name": "coloring of the TS this",
+			"scope": "variable.language.this",
+			"settings": {
+				"foreground": "#569cd6"
+			}
+		},
+		{
+			"name": "Function declarations",
+			"scope": [
+				"entity.name.function",
+				"support.function",
+				"support.constant.handlebars"
+			],
+			"settings": {
+				"foreground": "#DCDCAA"
+			}
+		},
+		{
+			"name": "Types declaration and references",
+			"scope": [
+				"meta.return-type",
+				"support.class",
+				"support.type",
+				"entity.name.type",
+				"entity.name.class",
+				"source.cs storage.type"
+			],
+			"settings": {
+				"foreground": "#4EC9B0"
+			}
+		},
+		{
+			"name": "Types declaration and references, TS grammar specific",
+			"scope": [
+				"meta.type.cast.expr",
+				"meta.type.new.expr",
+				"support.constant.math",
+				"support.constant.dom",
+				"support.constant.json",
+				"entity.other.inherited-class"
+			],
+			"settings": {
+				"foreground": "#4EC9B0"
+			}
+		},
+		{
+			"name": "Control flow keywords",
+			"scope": "keyword.control",
+			"settings": {
+				"foreground": "#C586C0"
+			}
+		},
+		{
+			"name": "Variable and parameter name",
+			"scope": [
+				"variable",
+				"meta.definition.variable.name",
+				"support.variable"
+			],
+			"settings": {
+				"foreground": "#9CDCFE"
+			}
+		},
+		{
+			"name": "Object keys, TS grammar specific",
+			"scope": [
+				"meta.object-literal.key",
+				"meta.object-literal.key entity.name.function"
+			],
+			"settings": {
+				"foreground": "#9CDCFE"
+			}
+		},
+		{
+			"name": "CSS property value",
+			"scope": [
+				"support.constant.property-value",
+				"support.constant.font-name",
+				"support.constant.media-type",
+				"support.constant.media",
+				"constant.other.color.rgb-value",
+				"constant.other.rgb-value",
+				"support.constant.color"
+			],
+			"settings": {
+				"foreground": "#CE9178"
+			}
+		},
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#ffffff5b"
+      }
+    },
+    {
+      "scope": "punctuation.definition.string.begin",
+      "settings": {
+        "foreground": "#ffee00"
+      }
+    },
+    {
+      "scope": "punctuation.definition.string.end",
+      "settings": {
+        "foreground": "#ffee00"
+      }
+    },
+    {
+      "scope": "punctuation.definition.tag.begin",
+      "settings": {
+        "foreground": "#fffb00"
+      }
+    },
+    {
+      "scope": "punctuation.definition.tag.end",
+      "settings": {
+        "foreground": "#fffb00"
+      }
+    },
+    {
+      "scope": "keyword.operator.logical",
+      "settings": {
+        "foreground": "#ff7b00"
+      }
+    },
+    {
+      "scope": "punctuation.definition.block",
+      "settings": {
+        "foreground": "#ffee00"
+      }
+    },
+    {
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "#ff8800"
+      }
+    },
+    // clases css dentro del html
+    {
+      "scope": "string.quoted.double.html",
+      "settings": {
+        "foreground": "#ff93dd",
+        "fontStyle": "italic" // Valores de atributos HTML
+      }
+    },
+    {
+      "scope": "string.quoted.single.html",
+      "settings": {
+        "foreground": "#ff93dd" // Valores de atributos HTML
+      }
+    },
+    // fin de clasess css dentro de html
+    {
+      "scope": "string.quoted.double.ts",
+      "settings": {
+        "foreground": "#84f1ff" // Valores de variables ts
+      }
+    },
+    {
+      "scope": "string.quoted.single.ts",
+      "settings": {
+        "foreground": "#84f1ff" // Valores de variables ts
+      }
+    },
+    {
+      "scope": "variable.other.object.ts.embedded.html",
+      "settings": {
+        "foreground": "#D0A9FF" // Variables TS en HTML (violeta light)
+      }
+    },
+    {
+      "scope": "variable.other.property.ts.embedded.html",
+      "settings": {
+        "foreground": "#D0A9FF" // Variables TS en HTML (violeta light)
+      }
+    },
+    {
+      "scope": "variable.other",
+      "settings": {
+        "foreground": "#e4b5fd" // Variables TS en HTML (violeta light)
+      }
+    },
+    {
+      "scope": "entity.other.attribute-name.html",
+      "settings": {
+        "foreground": "#00DDFF" // Atributos HTML
+      }
+    },
+    {
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "#00DDFF" // Atributos HTML
+      }
+    },
+    {
+      "scope": "storage.modifier",
+      "settings": {
+        "foreground": "#31cbff" // Modificadores de acceso (public, private, protected)
+      }
+    },
+    {
+      "scope": "keyword.control",
+      "settings": {
+        "foreground": "#FF73B3",
+        "fontStyle": "italic" //  import, export, return, etc.
+      }
+    },
+    {
+      "scope": "constant.language.boolean",
+      "settings": {
+        "foreground": "#FFD700", // Dorado que combina con tus amarillos
+        "fontStyle": "italic"
+      }
+    },
+    // Variables booleanas
+    {
+      "scope": "constant.language.boolean.true",
+      "settings": {
+        "foreground": "#FFAA00", // Naranja-dorado para "true"
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "constant.language.boolean.false",
+      "settings": {
+        "foreground": "#FF6600", // Naranja más rojizo para "false"
+        "fontStyle": "italic"
+      }
+    },
+    // fin de variables booleanas
+    //tipos de typescript
+    {
+      "scope": "support.type.primitive",
+      "settings": {
+        "foreground": "#22D1B0", // Turquesa para tipos primitivos (string, number, boolean)
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "support.type",
+      "settings": {
+        "foreground": "#22D1B0", // Turquesa para tipos generales
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#1EDCAA", // Turquesa más brillante para interfaces y tipos personalizados
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "entity.name.type.interface",
+      "settings": {
+        "foreground": "#26E9B6", // Turquesa más claro para interfaces
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "entity.name.type.alias",
+      "settings": {
+        "foreground": "#26E9B6", // Turquesa más claro para alias de tipos
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "meta.type.parameters",
+      "settings": {
+        "foreground": "#26D9F7", // Azul turquesa para genéricos
+        "fontStyle": "italic"
+      }
+    },
+    // fin de tipos de typescript
+    // backticks
+    {
+      "scope": "punctuation.definition.string.template.begin, string.template punctuation.definition.string.begin",
+      "settings": {
+        "foreground": "#FFCC00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "punctuation.definition.string.template.end, string.template punctuation.definition.string.end",
+      "settings": {
+        "foreground": "#FFCC00",
+        "fontStyle": "bold"
+      }
+    },
+    // Regla específica para los backticks en decoradores Angular
+    {
+      "scope": "meta.decorator meta.object.member string.template punctuation",
+      "settings": {
+        "foreground": "#FFCC00",
+        "fontStyle": "bold"
+      }
+    },
+    // fin de backticks
+    // simbolo de igual en ts
+    {
+      "scope": "keyword.operator.assignment",
+      "settings": {
+        "foreground": "#FFEE00" // Amarillo brillante para el símbolo igual
+      }
+    },
+    // fin de simbolo de igual en ts
+    // simbolo de igual en html
+    {
+      "scope": "punctuation.separator.key-value",
+      "settings": {
+        "foreground": "#FFEE00" // Amarillo brillante para el símbolo igual
+      }
+    },
+    // fin de simbolo de igual en html
+
+    // Selectores CSS/SCSS en propiedad styles de Angular
+    {
+      "scope": "entity.name.tag.css, entity.other.attribute-name.class.css, entity.other.attribute-name.id",
+      "settings": {
+        "foreground": "#ff93dd" // Naranja para selectores (como "li")
+      }
+    },
+    // Propiedades CSS/SCSS en propiedad styles
+    {
+      "scope": "support.type.property-name.css",
+      "settings": {
+        "foreground": "#ffdd76" // Azul claro para propiedades (como "cursor")
+      }
+    },
+    // Valores CSS/SCSS en propiedad styles
+    {
+      "scope": "support.constant.property-value.css",
+      "settings": {
+        "foreground": "#33e0ff" // Verde digital para valores (como "pointer")
+      }
+    },
+    // Puntuación CSS/SCSS (llaves, puntos y coma, dos puntos)
+    {
+      "scope": "punctuation.section.property-list.begin.bracket.curly.css, punctuation.section.property-list.end.bracket.curly.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css",
+      "settings": {
+        "foreground": "#FFEE00" // Amarillo para puntuación consistente con el resto
+      }
+    },
+    {
+      "scope": "punctuation.support.type.property-name.begin.json",
+      "settings": {
+        "foreground": "#FFEE00" // Amarillo brillante para comillas en propiedades JSON
+      }
+    },
+    {
+      "scope": "punctuation.support.type.property-name.end.json",
+      "settings": {
+        "foreground": "#FFEE00" // Amarillo brillante para comillas en propiedades JSON
+      }
+    },
+    // Símbolo @ para decoradores en TypeScript
+    {
+      "scope": "punctuation.decorator",
+      "settings": {
+        "foreground": "#FFDD00", // Amarillo fuerte para decoradores
+        "fontStyle": "bold" // Opcional: hacerlo en negrita para que destaque más
+      }
+    },
+    // Símbolo @ para directivas estructurales (@if, @for, etc.) en templates HTML
+    {
+      "scope": "keyword.control.flow.ts.embedded.html",
+      "settings": {
+        "foreground": "#FFDD00" // Amarillo fuerte para @if, @for, etc. en HTML
+      }
+    },
+    {
+      "scope": "punctuation.decorator.ts.embedded.html",
+      "settings": {
+        "foreground": "#FFDD00" // Amarillo fuerte para el símbolo @ en HTML
+      }
+    },
+    // Para el caso específico de @if, @for, etc. en los templates de Angular
+    {
+      "scope": "meta.template.expression punctuation.decorator",
+      "settings": {
+        "foreground": "#FFDD00" // Amarillo fuerte para @ en templates
+      }
+    },
+    // Reglas específicas para nuevas directivas estructurales de Angular (@if, @for, etc.)
+    {
+      "scope": "entity.name.function.angular-at-block",
+      "settings": {
+        "foreground": "#FFDD00", // Amarillo fuerte
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.control.angular-at-block",
+      "settings": {
+        "foreground": "#FFDD00", // Amarillo fuerte
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "meta.block.ts string.template meta.at-rule",
+      "settings": {
+        "foreground": "#FFDD00", // Amarillo fuerte
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "text.html.derivative meta.at-rule",
+      "settings": {
+        "foreground": "#FFDD00", // Amarillo fuerte
+        "fontStyle": "bold"
+      }
+    },
+     // Angular control flow - operador @ en HTML
+     {
+      "scope": "punctuation.definition.block.ts.embedded.html",
+      "settings": {
+        "foreground": "#FFDD00",
+        "fontStyle": "bold"
+      }
+    },
+    // Angular control flow - palabras clave después del @
+    {
+      "scope": "keyword.control.flow.angular",
+      "settings": {
+        "foreground": "#FFDD00",
+        "fontStyle": "bold"
+      }
+    },
+    // Angular control flow - operador @ específico
+    {
+      "scope": "punctuation.decorator.at-character.angular",
+      "settings": {
+        "foreground": "#FFDD00",
+        "fontStyle": "bold"
+      }
+    },
+    // Angular control flow en templates literales (component inline templates)
+    {
+      "scope": "meta.template.expression.angular meta.at-rule",
+      "settings": {
+        "foreground": "#FFDD00",
+        "fontStyle": "bold"
+      }
+    },
+    // Angular control flow en templates HTML externos
+    {
+      "scope": [
+        "source.angular.embedded.html meta.at-rule",
+        "text.html.derivative meta.decorator.angular"
+      ],
+      "settings": {
+        "foreground": "#FFDD00",
+        "fontStyle": "bold"
+      }
+    },
+    // Cobertura completa para cualquier símbolo @
+    {
+      "scope": [
+        "meta.block.ts meta.decorator punctuation.decorator",
+        "meta.block.ts.embedded.html punctuation.decorator",
+        "text.html meta.decorator punctuation.decorator"
+      ],
+      "settings": {
+        "foreground": "#FFDD00",
+        "fontStyle": "bold"
+      }
+    }
+
+	]
+}

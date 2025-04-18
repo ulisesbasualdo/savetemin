@@ -1,0 +1,21 @@
+{
+  "name": "savetemin",
+  "displayName": "SaveMyEyes-SaveMyBrain",
+  "description": "This is a color theme that applies to the whole editor, including the terminal.I made it because my eyes couldn’t handle those themes that make you tear up while coding.I don’t like themes full of grays and low contrast. This one feels like something for a tavern man or a tough woman out hunting to feed her kids.I also added extra colors for double and single quotes, and for whatever’s inside those quotes.It’s perfect for people working with Angular, especially those who put their HTML, CSS, or SCSS right inside a TypeScript file.I haven’t tested it with other frameworks, and honestly, I wouldn’t recommend it unless you’ve got time to kill in case something breaks. I don’t know if it’ll break anything — but if you wanna try it, make sure you’ve got the time. En Español: Este es un tema de colores que se aplica a todo el editor, incluida la terminal.Lo inventé porque no me bancaba esos temas que te hacen llorar los ojos cuando estás codeando.No me gustan los temas con grises y de contraste bajo. Este es un tema bien de hombre de taberna o mujer con basto, cazando para alimentar a sus crías.Además, le metí colores extra para las comillas dobles, simples y lo que hay adentro de esas comillas.Es ideal para los que trabajan con Angular, y que dentro del mismo archivo TypeScript mandan su HTML, CSS o SCSS ahí mismo.Para otros frameworks no lo probé, y la verdad no te lo recomiendo a menos que tengas tiempo de sobra por si pasa alguna cagada. No sé si va a fallar, pero si lo querés probar, que sea con tiempo.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "SaveMyEyes-SaveMyBrain",
+        "uiTheme": "hc-black",
+        "path": "./themes/SaveMyEyes-SaveMyBrain-color-theme.json"
+      }
+    ]
+  }
+}
