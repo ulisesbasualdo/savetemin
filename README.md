@@ -1,4 +1,4 @@
-# 🇬🇧 TavernTemin
+# 🇬🇧 SaveTemin
 
 A color theme with no grays, no sad contrasts — just strong, spicy colors so your eyes don't cry in pain while coding.
 
@@ -43,7 +43,7 @@ Other frameworks outside of Angular.
 
 ---
 
-# 🇪🇸 TavernTemin
+# 🇪🇸 SaveTemin
 
 Un tema de colores sin grises, sin contrastes tristes — solo colores fuertes y picantes para codear sin que llores por dolor de ojos.
 
