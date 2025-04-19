@@ -7,8 +7,8 @@
     "scrollbarSlider.activeBackground": "#fffb00",
     "scrollbarSlider.background": "#fffb00a2",
     "scrollbarSlider.hoverBackground": "#fffb00b5",
+    "sideBar.background": "#00011e",
     "sideBar.border": "#0080ff",
-    "activityBar.background": "#2d1467",
     "titleBar.activeBackground": "#5c43ff",
     "titleBar.activeForeground": "#ffffff",
     "tab.activeBackground": "#3344a8",
@@ -24,8 +24,8 @@
     "editorIndentGuide.activeBackground3": "#3dff33bb",
     "editorIndentGuide.activeBackground4": "#3dff33aa",
     "editorIndentGuide.activeBackground5": "#3dff3399",
-    "terminal.background": "#000000",
-    "terminal.foreground": "#b5ffd9",
+    "terminal.background": "#00011e",
+    "terminal.foreground": "#ffffff",
     "terminal.selectionBackground": "#0066ff77",
     "terminal.border": "#0080ff55",
     "terminal.ansiBlack": "#001233",
@@ -52,7 +52,7 @@
     "editorCursor.background": "#ffffffff",
     "editor.lineHighlightBorder": "#80808015",
     "editor.lineHighlightBackground": "#80808008",
-    "editorError.foreground": "#ff0000aa",
+    "editorError.foreground": "#ff0000",
     "editorError.border": "#ff000000",
     "editorWarning.foreground": "#ffcc00aa",
     "editorWarning.border": "#ffcc0000",
@@ -63,7 +63,12 @@
     "editor.wordHighlightBorder": "#00000000",
     "editor.wordHighlightStrongBorder": "#00000000",
     "editor.wordHighlightBackground": "#00000000",
-    "editor.wordHighlightStrongBackground": "#00000000"
+    "editor.wordHighlightStrongBackground": "#00000000",
+    "activityBar.background": "#000000",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.activeBorder": "#ffc131",
+    "activityBarBadge.background": "#6c6c6c",
+    "activityBarBadge.foreground": "#fbff00"
   },
   "tokenColors": [
     {
@@ -393,6 +398,36 @@
       ],
       "settings": {
         "foreground": "#FFEE00"
+      }
+    },
+    {
+      "name": "TypeScript implements keyword",
+      "scope": [
+        "meta.class.ts keyword.other.implements",
+        "meta.class.tsx keyword.other.implements",
+        "meta.class.js keyword.other.implements",
+        "storage.modifier.implements",
+        "keyword.other.implements",
+        "meta.interface-heritage.ts keyword.control.implements",
+        "meta.interface-heritage.tsx keyword.control.implements",
+        "meta.class storage.modifier.implements"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "name": "Angular lifecycle interfaces",
+      "scope": [
+        "support.class.interface.ts",
+        "entity.name.type.interface.ts",
+        "entity.other.inherited-class.ts",
+        "meta.interface-heritage.ts entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#FFEE00",
+        "fontStyle": "italic"
       }
     },
     {
@@ -729,6 +764,22 @@
       ],
       "settings": {
         "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "Angular Pipes",
+      "scope": [
+        "support.function.pipe.angular",
+        "entity.name.function.pipe",
+        "entity.name.type.pipe",
+        "support.type.pipe", 
+        "meta.object-literal.key.pipe",
+        "variable.other.readwrite.ts.pipe",
+        "meta.tag.template.angular variable.other.pipe"
+      ],
+      "settings": {
+        "foreground": "#FFA500",
+        "fontStyle": "italic"
       }
     }
   ]
