@@ -7,7 +7,7 @@
     "url": "https://github.com/ulisesbasualdo/savetemin.git"
   },
   "description": "This is a color theme that applies to the whole editor, including the terminal.",
-  "version": "0.1.1",
+  "version": "0.1.11",
   "engines": {
     "vscode": "^1.99.0"
   },

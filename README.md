@@ -4,7 +4,7 @@ A color theme with no grays, no sad contrasts — just strong, spicy colors so y
 
 ## 📸 Preview
 
-![Preview del tema](./images/preview.png)
+![Preview del tema](./images/preview.jpg)
 
 ---
 
