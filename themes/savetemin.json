@@ -737,7 +737,7 @@
         "text.html meta.decorator punctuation.decorator"
       ],
       "settings": {
-        "foreground": "#FFDD00",
+        "foreground": "#febe3d",
         "fontStyle": "bold"
       }
     },
@@ -772,7 +772,7 @@
         "support.function.pipe.angular",
         "entity.name.function.pipe",
         "entity.name.type.pipe",
-        "support.type.pipe", 
+        "support.type.pipe",
         "meta.object-literal.key.pipe",
         "variable.other.readwrite.ts.pipe",
         "meta.tag.template.angular variable.other.pipe"
@@ -781,6 +781,77 @@
         "foreground": "#FFA500",
         "fontStyle": "italic"
       }
+    },
+    {
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#feffac"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.ng-binding-name.begin.html",
+        "punctuation.definition.ng-binding-name.end.html",
+        "storage.type.function.arrow.ts",
+        "punctuation.section.brackets"
+      ],
+      "settings": {
+        "foreground": "#ffd900"
+      }
+    },
+    {
+      "scope":["source.dart"],
+      "settings":{"foreground":"#41ccff"}
+    },
+    {
+      "scope":[
+        "support.class.dart"
+      ],
+      "settings": {
+        "foreground": "#ff6d6d",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope":[
+        "entity.name.type.class"
+      ],
+      "settings": {
+        "foreground": "#ff6d6d",
+        "fontStyle": "bold"
+      }
     }
-  ]
+  ],
+  "semanticTokenColors": {
+      "property": "#41ccff",
+      "typeParameter": "#6cd1ff",
+      "label": "#c62020",
+      "struct": "#f2ff38",
+      "parameter": {
+        "foreground":"#ffcf70",
+        "bold": false
+      },
+      "string": "#ffee00",
+      "variable": "#61AFEE",
+      "namespace": "#ffffff",
+      "macro": "#f9f8f9",
+      "keyword": "#f891ff",
+      "source.interpolation": { "foreground": "#ffbe3b", "bold": true },
+      "type": "#E5C07B",
+      "type.declaration": "#ffffff",
+      "class.constructor": "#85baff",
+      "method.constructor": "#ffe600",
+      "function": "#10dfff",
+      "method": "#fffc57",
+      "class.annotation": "#ffffff",
+      "property.annotation": {
+        "bold": true,
+        "foreground": "#ffea00"
+      },
+      "annotation": {
+        "bold": true,
+        "foreground": "#00c8ff"
+      },
+      "number": "#cca0ff"
+    }
 }
